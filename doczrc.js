@@ -1,12 +1,14 @@
 import doczPluginNetlify from 'docz-plugin-netlify'
 import { css } from 'docz-plugin-css'
 
+import theme from './src/theme'
+
 export default {
-  title: 'Pismo',
-  description: 'Pismo UI documentation',
+  title: 'CRA Starter',
+  description: 'CRA Starter UI documentation',
   themeConfig: {
     colors: {
-      primary: '#F37A21',
+      primary: theme.palette.primary,
     },
   },
   plugins: [doczPluginNetlify(), css()],
